@@ -1,0 +1,39 @@
+
+1. Command to upload FND FILES
+NOTE: Please make sure to update the password. thanks!
+
+
+Move the LDT files to /u01/oracle/apps/apps_st/appl/xxnbty/12.0.0/admin/import and execute the command.
+
+
+--upload_menu 
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXNBTY_MSC_SCP_TOP_4.0_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct MSC_SCA_TOP_4.0_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXNBTY_ASCP_IOADMINUSER_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXNBTY_INVENTORY_PLANNER_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXNBTY_PLANNING_ADMIN_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct MSC_TOP_4.0_MU.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+
+--upload_responsibility
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTYAPCCSSManager_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_APCC_Supply_User_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_ASCP_IOAdminUser_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_Inventory_Planner_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_Planning_Admin_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_Supply_Planner_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
+FNDLOAD apps/PASSWORD  O Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct NBTY_APCC_Supply_Admin_User_UR.ldt CUSTOM_MODE=FORCE >> /home/nbtydata/VCP_RICEFW/VCP_deployment_additional.log
+
